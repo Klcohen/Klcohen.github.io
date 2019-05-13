@@ -1,0 +1,16 @@
+body{
+    background: var(--black);
+
+}
+
+button{
+    color: var(--grey)
+}
+
+h1{
+    font-family: 'Oswald', sans-serif;
+}
+
+#contact{
+    color:white;
+}
