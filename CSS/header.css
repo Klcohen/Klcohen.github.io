@@ -1,6 +1,12 @@
 .jumbotron{
     background: url("../assets/oceanRocks.jpg") no-repeat center;
     background-size: cover;
-    color: white;
+    color:lavenderblush;
     text-align: center;
+    text-shadow: 2px 2px grey;
+    
+}
+
+.lead{
+    text-shadow:  1px 1px grey;
 }

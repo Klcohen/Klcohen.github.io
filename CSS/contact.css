@@ -1,0 +1,18 @@
+#contact{
+    font-family: 'Oswald', sans-serif;
+    color:white;
+    border-color: var(--greyblue);
+    text-anchor: middle;
+    margin-left: 0%;
+    padding-left:27%;
+    margin-bottom: 5%;
+}
+
+.form-group{
+    width: 500px;
+}
+
+.text-uppercase{
+
+    padding-left: 25%;
+}
