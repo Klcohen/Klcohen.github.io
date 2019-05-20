@@ -1,0 +1,15 @@
+footer{
+    color: var(--grey);
+    list-style-type: inherit;
+}
+
+.foot{
+    color: grey;
+}
+
+a{
+    color: grey;
+}
+.navbar{
+    color: var(--grey)
+}
