@@ -1,3 +1,7 @@
 #nav-content{
  margin-left: 84%;
 }
+
+html{
+    scroll-behavior: smooth;
+}
