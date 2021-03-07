@@ -1,12 +1,14 @@
 .jumbotron{
-    background: url("../assets/oceanRocks.jpg") no-repeat center;
     background-size: cover;
-    color:lavenderblush;
-    text-align: center;
-    text-shadow: 2px 2px grey;
+    color:#000 !important;
+    text-align: left;
+    align-content: center;
+    height: 60em;
+    padding-top: 10em;
+    background-color: lightblue;
     
 }
 
 .lead{
-    text-shadow:  1px 1px grey;
+    color: #000;
 }

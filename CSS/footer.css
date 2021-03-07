@@ -11,5 +11,7 @@ a{
     color: grey;
 }
 .navbar{
-    color: var(--grey)
+    background-color: lightblue;
+    color:black;
+    font-family: 'Suisseintl webm', sans-serif !important;
 }
