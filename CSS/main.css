@@ -2,7 +2,7 @@ body{
     background: var(--navy);
     font-family: 'Neue Haas Grotesk Display Pro';
     color:var(--lightGold);
-    
+    text-align: center;
 }
 
 button{
@@ -86,12 +86,14 @@ HEADER
     font-family: 'Big caslon';
     font-size: 6em;
     padding-top: 60px;
+    text-align: left !important;
 }
 
 .littletitle{
     font-family: 'Neue Haas Grotesk Display Pro';
     color: var(--lightGold);
     font-size: 1.5em;
+    text-align: left !important;
 }
 
 #header{
@@ -103,17 +105,21 @@ CONTACT
     color:white;
     border-color: var(--darkGold);
     text-anchor: middle;
-    margin-left: 0%;
-    padding-left:27%;
-    margin-bottom: 5%;
+    border-radius: 30px;
+    align-content: center;
+
+}
+.container{
+    align-content: center;
 }
 
 .form-group{
     width: 500px;
+    align-items: center;
 }
 
 .text-uppercase{
-    padding-left: 25%;
+    text-align: center;
     
 }
 
@@ -135,6 +141,7 @@ html{
 
 footer{
     padding: 30px; 
+    text-align: left !important;
 }
 
 .foot{
