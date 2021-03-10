@@ -127,11 +127,14 @@ html{
    
 .nav-link{
        color:var(--lightGold) !important;
+       text-align: right;
    }
+.nav-content{
+    align-content: right;
+}
 
 footer{
-    color: var(--lightGold);
-    list-style-type: inherit;
+    padding: 30px; 
 }
 
 .foot{
