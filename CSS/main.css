@@ -35,14 +35,12 @@ li{
 }
 #aboutMe{
     background-color: var(--black);
-    border-radius: 40px;
     color: white;
     text-align: left ;
     align-content: 'center';
-    margin-left: 15%;
-    padding-right: 5%;
-    padding-left: 5%;
-    margin-right: 15%;
+    padding-right: 15%;
+    padding-left: 15%;
+
 
 }
 
@@ -128,7 +126,7 @@ NAVBAR
 html{
        scroll-behavior: smooth;
        overflow-x: hidden;
-       color: var(--navy);
+       color: var(--lightGold);
    }
    
 .nav-link{
