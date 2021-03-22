@@ -1,21 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins');
+
 body{
-    background: var(--navy);
-    font-family: 'Neue Haas Grotesk Display Pro';
-    color:var(--lightGold);
+    background: var(--base);
+    font-family: 'Poppins', sans-serif;
+    color:var(--highlightOne);
     text-align: center;
 }
 
-button{
-    color: white
-}
-
 h1{
-    font-family: 'big caslon';
+    font-family: 'Poppins', sans-serif;
     text-align: 'center';
 }
 
+
 p{
-    font-family: 'Neue Haas Grotesk Display Pro';
+    font-family: 'Poppins', sans-serif;
 }
 
 ul{
@@ -34,7 +34,7 @@ li{
     padding-left: 10px;
 }
 #aboutMe{
-    background-color: var(--black);
+    background-color:var(--highlightOne);
     color: white;
     text-align: left ;
     align-content: 'center';
@@ -45,23 +45,84 @@ li{
 }
 
 .projects{
-    background-color: var(--navy);
+    background-color: var(--base);
 }
 
-  .row{
-      padding-bottom: 2%;
-      padding-top: 2%;
-      padding-left: 2%;
-      padding-right: 2%;
+.float-layout {
+    padding: 5px 5px;
+    float: left;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    margin: 0;
   }
-
- .container-fluid{
-    color: var(--navy);
- }
-
- .card-img-top{
-
- }
+  
+  .card-container {
+    overflow: hidden;
+  }
+  
+  .card {
+    background-color: var(--base);
+    color: white;
+    min-height: 100%; /*replace this it in width: 100%*/
+    width: 50%;
+    padding-left: 10%;
+    padding-right: 10%;
+    border: none;
+    float: right;
+  }
+  
+  .card-title {
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    padding-top: 20px;
+  }
+  
+  .card-desc {
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+  }
+  .card-button{
+      margin: 0;
+      position: absolute;
+      top: 75%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+  }
+  
+  /*add this it*/
+  .card-image {
+    display: flex;
+  }
+  /*-------------*/
+  
+  div.card-image img {
+    width: 50%;
+    height: auto;
+  }
+  
+  /* Phone Devices Query */
+  @media only screen and (max-width: 37.5em) {
+    div.card-image img {
+      width: 100%;
+      height: auto;
+    }
+    
+    /*add this it*/
+    .card-image {
+       flex-direction: column;
+    }
+    /*----------------------*/
+  
+    .card {
+      width: 100%;
+      height: 100%;
+      margin-top: -4px;
+    }
+  }
 
  #overlay {
     position: fixed; /* Sit on top of the page content */
@@ -74,22 +135,22 @@ li{
     bottom: 0;
     background-color: rgba(0,0,0,0.7); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */
+    cursor: pointer; /* Add a pointer on hover */]
   }
-
+  
 HEADER
   
 .bigtitle{
-    color: var(--darkGold);
-    font-family: 'Big caslon';
+    color: var(--highlightTwo);
+    font-family: 'Poppins', sans-serif;
     font-size: 6em;
     padding-top: 60px;
     text-align: left !important;
 }
 
 .littletitle{
-    font-family: 'Neue Haas Grotesk Display Pro';
-    color: var(--lightGold);
+    font-family: 'Poppins', sans-serif;
+    color: white;
     font-size: 1.5em;
     text-align: left !important;
 }
@@ -99,38 +160,47 @@ HEADER
 }
 
 CONTACT
-#contact{
+.contact{
     color:white;
-    border-color: var(--darkGold);
-    text-anchor: middle;
+    border-color: var(--highlightTwo);
     border-radius: 30px;
+    justify-items: center;
     align-content: center;
-
+    background-color: var(--highlightTwo);
+}
+label{
+    text-align: left !important;
 }
 .container{
-    align-content: center;
+    align-content: center !important;
+    justify-content: center !important;
 }
-
+form{
+    align-items: center !important;
+    justify-content: center !important;
+}
 .form-group{
     width: 500px;
-    align-items: center;
+    align-items: center !important;
+    justify-content: center !important;
+
 }
 
 .text-uppercase{
-    text-align: center;
+    text-align: left;
     
 }
 
 NAVBAR
    
 html{
-       scroll-behavior: smooth;
-       overflow-x: hidden;
-       color: var(--lightGold);
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  color: var(--highlightTwo);
    }
    
 .nav-link{
-       color:var(--lightGold) !important;
+       color:var(--highlightTwo) !important;
        text-align: right;
    }
 .nav-content{
@@ -143,16 +213,181 @@ footer{
 }
 
 .foot{
-    color: var(--navy);
+    color: var(--base);
 }
 
 a{
-    color: var(--navy);
+    color: var(--base);
 }
 .navbar{
-    background-color: var(--navy);
-    color: var(--lightGold);
+    background-color: var(--base);
+    color: var(--highlightTwo);
 }
+.overlayButt{
+  position: absolute;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  text-transform: uppercase;
+  height: 60px;
+  width: 210px;
+  opacity: 1;
+  background-color: white;
+  position: absolute;
+  top: 75%;
+  left: 42%;
+}
+
+button {
+    position: relative;
+    outline: none;
+    text-decoration: none;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    cursor: pointer;
+    text-transform: uppercase;
+    height: 60px;
+    width: 210px;
+    opacity: 1;
+    background-color: white;
+    border: 2px solid var(--highlightOne);
+  }
+  button span {
+    color: var(--highlightOne);
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.7px;
+  }
+  button:hover {
+    animation: rotate 0.7s ease-in-out both;
+    background-color: var(--highlightOne);
+  }
+  button:hover span {
+    animation: storm 0.7s ease-in-out both;
+    animation-delay: 0.06s;
+    color: white;
+  }
+  
+  @keyframes rotate {
+    0% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+    25% {
+      transform: rotate(3deg) translate3d(0, 0, 0);
+    }
+    50% {
+      transform: rotate(-3deg) translate3d(0, 0, 0);
+    }
+    75% {
+      transform: rotate(1deg) translate3d(0, 0, 0);
+    }
+    100% {
+      transform: rotate(0deg) translate3d(0, 0, 0);
+    }
+  }
+  @keyframes storm {
+    0% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+    25% {
+      transform: translate3d(4px, 0, 0) translateZ(0);
+    }
+    50% {
+      transform: translate3d(-3px, 0, 0) translateZ(0);
+    }
+    75% {
+      transform: translate3d(2px, 0, 0) translateZ(0);
+    }
+    100% {
+      transform: translate3d(0, 0, 0) translateZ(0);
+    }
+  }
+  
+SOCIAL ICONS
+.wrap{
+  margin: 0 auto;
+  padding: 2%;
+  width: 20em;
+}
+
+.wrap div{
+  display: inline-block;
+  justify-content: center;
+}
+
+.icon{
+  background-color:#222;
+  background-repeat:no-repeat;
+  background-position:center center;
+  height: 5em;
+  width: 5em;
+  -webkit-transition: background-color 0.4s ease;
+  -moz-transition: background-color 0.4s ease;
+  -ms-transition: background-color 0.4s ease;
+  -o-transition: background-color 0.4s ease;
+  transition: background-color 0.4s ease;
+}
+
+.goof{
+  -webkit-transition: all 0.4s cubic-bezier(0,2,0,2);
+  -moz-transition: all 0.4s cubic-bezier(0,2,0,2);
+  -ms-transition: all 0.4s cubic-bezier(0,2,0,2);
+  -o-transition: all 0.4s cubic-bezier(0,2,0,2);
+  transition: all 0.4s cubic-bezier(0,2,0,2);
+}
+
+.goof:hover{
+  background-size:35%;
+}
+
+.icon a{
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+
+.linkedin{
+  background-image:url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAtMC4zIDEwNSAxMDUiPjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0xLjcsMzQuNmgyMS43djY5LjdIMS43VjM0LjZ6IE0xMi42LDBjNi45LDAsMTIuNiw1LjYsMTIuNiwxMi42YzAsNi45LTUuNiwxMi42LTEyLjYsMTIuNkM1LjYsMjUuMSwwLDE5LjUsMCwxMi42QzAsNS42LDUuNiwwLDEyLjYsMCIvPjxwYXRoIGZpbGw9IiNGRkZGRkYiIGQ9Ik0zNywzNC42aDIwLjh2OS41aDAuM2MyLjktNS41LDEwLTExLjMsMjAuNS0xMS4zYzIxLjksMCwyNiwxNC40LDI2LDMzLjJ2MzguMkg4Mi45VjcwLjRjMC04LjEtMC4yLTE4LjUtMTEuMy0xOC41Yy0xMS4zLDAtMTMsOC44LTEzLDE3Ljl2MzQuNUgzN1YzNC42eiIvPjwvc3ZnPg==);
+  background-size:50%; 
+}
+
+.linkedin:hover{
+  background-color:#007BB6;
+}
+
+.instagram{
+  background-image:url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iLTAuOSAtMC44IDYxIDYxIj48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZmlsbD0iI0ZGRkZGRiIgZD0iTTcuNywwaDQ0LjVjNC4yLDAsNy43LDMuNSw3LjcsNy43djQ0LjVjMCw0LjItMy41LDcuNy03LjcsNy43SDcuN2MtNC4yLDAtNy43LTMuNS03LjctNy43VjcuN0MwLDMuNSwzLjUsMCw3LjcsMEw3LjcsMHogTTQzLjYsNi43Yy0xLjUsMC0yLjcsMS4yLTIuNywyLjd2Ni41YzAsMS41LDEuMiwyLjcsMi43LDIuN2g2LjhjMS41LDAsMi43LTEuMiwyLjctMi43VjkuNGMwLTEuNS0xLjItMi43LTIuNy0yLjdINDMuNkw0My42LDYuN3ogTTUzLjEsMjUuM2gtNS4zYzAuNSwxLjYsMC44LDMuNCwwLjgsNS4xYzAsMTAtOC4zLDE4LTE4LjYsMThzLTE4LjYtOC4xLTE4LjYtMThjMC0xLjgsMC4zLTMuNSwwLjgtNS4xSDYuN3YyNS4zQzYuNyw1Miw3LjcsNTMsOSw1M2g0MS43YzEuMywwLDIuNC0xLjEsMi40LTIuNFYyNS4zTDUzLjEsMjUuM3ogTTMwLDE4LjJjLTYuNiwwLTEyLDUuMi0xMiwxMS43YzAsNi40LDUuNCwxMS43LDEyLDExLjdzMTItNS4yLDEyLTExLjdDNDIsMjMuNCwzNi43LDE4LjIsMzAsMTguMnoiLz48L3N2Zz4=);
+  background-size:55%; 
+}
+
+.instagram:hover{
+  background-color:#3F729B;
+}
+
+.github{
+  background-image:url(data:image/svg+xml;base64,PHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAtMC40IDMyIDMzIj48cGF0aCBmaWxsPSIjRkZGRkZGIiBkPSJNMzIsMTZjMCw4LjgtNy4yLDE2LTE2LDE2QzcuMiwzMiwwLDI0LjgsMCwxNkMwLDcuMiw3LjIsMCwxNiwwQzI0LjgsMCwzMiw3LjIsMzIsMTYgTTIwLDI5YzUuNS0xLjgsOS41LTYuOSw5LjUtMTNjMC03LjUtNi0xMy41LTEzLjUtMTMuNUM4LjUsMi41LDIuNSw4LjUsMi41LDE2YzAsNi4xLDQsMTEuMiw5LjUsMTN2LTIuNWMtMy45LDAuOS00LjgtMS44LTQuOC0xLjhjLTAuNi0xLjYtMS41LTItMS41LTJjLTEuMy0wLjksMC4xLTAuOCwwLjEtMC44YzEuNCwwLjEsMi4xLDEuNCwyLjEsMS40YzEuMywyLjMsMy41LDEuNCw0LjIsMS4xYzAuMi0xLDEtMS4yLDEuMi0xLjNDOS44LDIyLjYsNiwyMS4zLDYsMTUuMmMwLTEuNywwLjYtMy4xLDEuNi00LjJjLTAuMi0wLjQtMC43LTIsMC4yLTQuMmMwLDAsMS4zLTAuNCw0LjMsMS42YzEuMy0wLjMsMi42LTAuNSwzLjktMC41YzEuMywwLDIuNywwLjIsMy45LDAuNWMzLTIsNC4zLTEuNiw0LjMtMS42YzAuOSwyLjIsMC4zLDMuOCwwLjIsNC4yYzEsMS4xLDEuNiwyLjUsMS42LDQuMmMwLDYuMS0zLjgsNy40LTcuMyw3LjhjMC42LDAuNCwxLjMsMS4zLDEuMywyLjhWMjl6Ii8+PC9zdmc+);
+  background-size:60%; 
+}
+
+.github:hover{
+  background-color:#6CC644;
+}
+
+.dribbble{
+  background-image:url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz48c3ZnIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiAgd2lkdGg9IjQxcHgiIGhlaWdodD0iNDFweCIgdmlld0JveD0iLTAuMDIyIC0wLjk0IDQxIDQxIiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IC0wLjAyMiAtMC45NCA0MSA0MSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+PGcgaWQ9ImJhbGxfMl8iPjxnPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBmaWxsPSIjRkZGRkZGIiBkPSJNMjAsMEM4Ljk3MiwwLDAsOC45NzIsMCwyMHM4Ljk3MiwyMCwyMCwyMGMxMS4wMjgsMCwyMC04Ljk3MiwyMC0yMFMzMS4wMjgsMCwyMCwweiBNMzMuMjI0LDkuMjIzYzIuMzc5LDIuOTA3LDMuODIsNi42MDksMy44NTcsMTAuNjQyYy0wLjU2My0wLjExOS02LjIxMS0xLjI2NS0xMS44OTYtMC41NWMtMC4xMTktMC4yOTItMC4yNDItMC41ODYtMC4zNjctMC44ODJjLTAuMzU1LTAuODMzLTAuNzM2LTEuNjYxLTEuMTM0LTIuNDc0QzMwLjAwMSwxMy4zOCwzMi44NjMsOS43MSwzMy4yMjQsOS4yMjN6IE0yMCwyLjk0M2M0LjM0MSwwLDguMzA4LDEuNjI4LDExLjMyNCw0LjMwNWMtMC4zMDgsMC40MzgtMi44NzksMy44OTQtOC45NTMsNi4xNzFjLTIuNzk5LTUuMTQzLTUuOTAyLTkuMzY4LTYuMzc0LTEwQzE3LjI4MiwzLjEwOCwxOC42MjIsMi45NDMsMjAsMi45NDN6IE0xMi43MzcsNC41NjZjMC40NTEsMC42MTcsMy41MDMsNC44NDgsNi4zMzQsOS44NzljLTcuOTkxLDIuMTIyLTE1LjAyOSwyLjA5Mi0xNS43OTMsMi4wODJDNC4zODYsMTEuMjI2LDcuOTU4LDYuODIsMTIuNzM3LDQuNTY2eiBNMi45MTcsMjAuMDI2YzAtMC4xNzQsMC4wMDMtMC4zNDgsMC4wMDktMC41MjJjMC43NDgsMC4wMTYsOS4wMjYsMC4xMjIsMTcuNTU3LTIuNDMxYzAuNDg5LDAuOTU4LDAuOTU2LDEuOTI5LDEuMzg2LDIuODk5Yy0wLjIyNywwLjA2My0wLjQ1MSwwLjEzMS0wLjY3NCwwLjIwM2MtOC44MSwyLjg0OC0xMy40OTksMTAuNjEtMTMuODg2LDExLjI3M0M0LjU4MSwyOC40MTksMi45MTcsMjQuNDE0LDIuOTE3LDIwLjAyNnogTTIwLDM3LjEwOWMtMy45NDksMC03LjU4OS0xLjM0OC0xMC40ODUtMy42MDZjMC4zMDctMC42MjgsMy43NjYtNy4zMSwxMy40MDEtMTAuNjY4YzAuMDM4LTAuMDEzLDAuMDc1LTAuMDI1LDAuMTEyLTAuMDM4YzIuMzk5LDYuMjMyLDMuMzkxLDExLjQ1NiwzLjY0NSwxMi45NTVDMjQuNjIyLDM2LjYyNSwyMi4zNjYsMzcuMTA5LDIwLDM3LjEwOXogTTI5LjU0NSwzNC4xODhjLTAuMTc1LTEuMDQtMS4wODQtNi4wNDEtMy4zMTgtMTIuMTgxYzUuMzUzLTAuODU2LDEwLjA1NiwwLjU0NiwxMC42NDEsMC43M0MzNi4xMDUsMjcuNDkxLDMzLjM3NywzMS41OTYsMjkuNTQ1LDM0LjE4OHoiLz48L2c+PC9nPjwvc3ZnPg==);
+  background-size:65%; 
+}
+
+.dribbble:hover{
+  background-color:#ea4c89;
+}
+
 
 :root{
     --teal: #016E83;
@@ -161,4 +396,7 @@ a{
     --lightGold: #E3BA64;
     --darkGold: #77601C;
     --navy: #05092E;
+    --base: #1D1E18;
+    --highlightOne: #6B8F71;
+    --highlightTwo: #6A66A3;
 }

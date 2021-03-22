@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Keve's Portfolio</title>   
+    <title>Keve's Portfolio</title>  
+    <link rel="shortcut icon" type="image/png" href="./assets/Kevelogo.png">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href='./CSS/main.css'>
 </head>
@@ -32,19 +33,19 @@
     }
     </style>
 
-    <div id="overlay">
+  <div id="overlay">
       <div id="text">Hello! Keve is rebuilding her website with
         some groovy new features so it may look a bit messy right now! It will soon be in 
         tip top shape!
       </div>
-      <button id ="button" type="button" onclick="off()">I understand, lemme see it!</button>
+      <button class="overlayButt" onclick="off()">I understand, lemme see it!</button>
     </div>
 
     <!--NAVBAR-->
     <nav class="navbar navbar-expand-lg navbar-custom">
         <a class="navbar-brand" href="#"> <img src="assets/Kevelogo.png" style="width:50px;"> </a>
-        <button class="navbar-toggler" style="color: var(--lightGold)" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span style="color: var(--lightGold)" class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" style="color: var(--highlightTwo)" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span style="color: var(--highlightTwo)" class="navbar-toggler-icon"></span>
         </button>
       
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -75,7 +76,7 @@
       <div class= "row">
 
         <div class = "col">
-          <a href= "https://www.instagram.com/chief_keve/?hl=en" > <img src="assets/me.JPG" style="border-radius: 50%; width:300px;height:300px;"> </a>
+          <a href= "" > <img src="assets/me.JPG" style="border-radius: 50%; width:300px;height:300px;"> </a>
               </div>
 
         <div class = "col">
@@ -86,20 +87,15 @@
           to pursue tech endeavors in college and out. I've always thought of myself as a logical person and
           technology also allows me to be creative in my work which I really value.
           </p>
-          <ul>
-            <li>
-              <a href="https://www.linkedin.com/in/keve-cohen"><img id = "linkedIn" src="assets/linkedin.png" width="40" height="40"></a>
-            </li>
-            <li>
-                <a href="https://github.com/Klcohen"><img id = "gitHub" src="assets/github.png" width="40" height="40"></a>
-            </li>
-            <li>
-                <a href="https://dribbble.com/chief_keve"><img id = "dribbble" src="assets/dribbble.png" width="40" height="40"></a>
-            </li>
-            <li>
-              <a href="./assets/KeveCohen.pdf" style="color: white; font-size: large;"><u>Resume </u><span class="sr-only">(current)</span></a>
-            </li>
-          </ul>
+          <br/>
+          <h2 style="text-align: center;">Follow me</h2>
+
+          <div class="wrap" style="text-align: center;">
+            <div class="linkedin icon"><a href="https://www.linkedin.com/in/keve-cohen" target="_blank"></a></div>
+            <div class="instagram icon"><a href="https://www.instagram.com/chief_keve/?hl=en" target="_blank"></a></div>
+            <div class="github icon"><a href="https://github.com/Klcohen" target="_blank"></a></div>
+            <div class="dribbble icon"><a href="https://dribbble.com/chief_keve" target="_blank"></a></div>
+          </div>
         </div>
 
       </div>
@@ -111,147 +107,88 @@
 
 
 <div id ="projects">
-  <h1 style="text-align: center; padding-top: 30px;">Projects</h1>
+  <h1 style="text-align: center; padding-top: 30px; ">Projects</h1>
 
-  <div style="text-align: center;" class="container-fluid">
-
-    <div class = "row">
-
-      <div class="col">
-        <div class="card" style="width: 18rem;">
-          <img src="./assets/kailogo.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Kai Cohen Photography</h5>
-            <p class="card-text">This is a photography website made with wordpress. It has many custom features.
-            </p>
-            <a href="http://kaicohenphotography.com/" class="btn btn-primary">Explore</a>
+  <div class="card-container">
+    <div class="float-layout">
+      <div class="card-image">
+        <div class="card">
+          <div class="card-title">Sustaio</div>
+          <div class="card-desc">
+            I am a development and design intern at Sustaio
           </div>
+          <a href="https://www.sustaio.com/">
+          <div class="card-button">
+            <br/>
+          <button>
+            <span>Explore</span>
+          </button>
         </div>
+      </a>
         </div>
-
-        <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="./assets/susman.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Designs and illustrations</h5>
-                <p class="card-text">a collection of illustrations from a number of different mediums</p>
-                <a href="designs.html" class="btn btn-primary">Explore</a>
-              </div>
-            </div>
-            </div>
-
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-                  <img src="./assets/API.PNG" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">API Project</h5>
-                    <p class="card-text">Wondering what Ghibli movie you should watch tonight? Click the button and a title and description will be randomly selected!</p>
-                    <a href="https://api-project-ba528.firebaseapp.com/" class="btn btn-primary">Explore</a>
-                  </div>
-                </div>
-                </div>
-
-          </div>
-          <div class = "row">
-
-              <div class="col">
-            <div class="card" style="width: 18rem;">
-              <img src="./assets/wildfire.png" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title">Everything is on Fire</h5>
-                <p class="card-text">A Firefighter EMT Training Choose-Your-Own-Adventure Game</p>
-                <a href="https://klcohen.github.io/2020Game/" class="btn btn-primary">Explore</a>
-              </div>
-            </div>
-            </div>
-            
-            <div class="col">
-                <div class="card" style="width: 18rem;">
-              <img src="./assets/Shush.PNG" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">Shush</h5>
-                    <p class="card-text">A totally anonymous confession app</p>
-                    <a href="https://kc-shush-client.herokuapp.com/" class="btn btn-primary">Explore</a>
-                  </div>
-                </div>
-                </div>
-            
-                <div class="col">
-                    <div class="card" style="width: 18rem;">
-                      <img src="assets/ux.png" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">UX/UI portfolio</h5>
-                        <p class="card-text">Designs for daily UI challenge as well as other personal projects</p>
-                        <a href="uiport.html" class="btn btn-primary">Explore</a>
-                      </div>
-                    </div>
-                    </div>
-          </div>
+        <img style="padding: 15%; background-color: var(--highlightTwo);" src="./assets/static1.squarespace.png"/>
       </div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="float-layout">
+      <div class="card-image">
+        <img style="padding: 15%; background-color: var(--highlightTwo);" src="./assets/kailogo.png">
+        <div class="card">
+          <div class="card-title">Kai Cohen Photography</div>
+          <div class="card-desc">
+            Developed using WordPress this photography website is a personal project for my sister.
+            I used this project as an opportunity to teach myself the WordPress CMS and hone my design skills.
+            I wrote the copy using SEO phrases to maximize the likelyhood of traffic and created custom features such as 
+            the contact form. I also created the logo and instructed the client on how to add new photos to 
+            their landing page and galleries.
+          </div>
+          <a href="http://kaicohenphotography.com/">
+          <div class="card-button">
+            <br/>
+          <button>
+            <span>explore</span>
+          </button>
+        </div>
+      </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="float-layout">
+      <div class="card-image">
+        <div class="card">
+          <div class="card-title">Everything is on Fire</div>
+          <div class="card-desc">
+            A Firefighter EMT Training Choose-Your-Own-Adventure Game
+          </div>
+          <a href="https://klcohen.github.io/2020Game/">
+          <div class="card-button">
+            <br/>
+          <button>
+            <span>Explore</span>
+          </button>
+        </div>
+      </a>
+        </div>
+        <img style="padding: 15%; background-color: var(--highlightTwo);" src="./assets/wildfire.png"/>
+      </div>
+    </div>
+  </div>
+
 </div>
 
     <!--CONTACT ME-->
-
     <section id="contact">
       <br /> <br />
-            <div class="container">
-              <h1>Contact Me</h1>
-                <form action="https://formspree.io/lyricco27@gmail.com" method="POST">
-                  <div class="control-group">
-                    <div class="form-group">
-                      <label>Name</label>
-                      <input
-                        type="text"
-                        class="form-control"
-                        placeholder="Your Name"
-                        id="name"
-                        required
-                        data-validation-required-message="Please enter your name"
-                        name="name"
-                        >
-                    <p class="help-block text-danger"></p>
-                    </div>
-                  </div>
-                  <div class="control-group">
-                    <div class="form-group">
-                      <label>Email Address</label>
-                      <input
-                        type="email"
-                        class="form-control"
-                        placeholder="Your Email"
-                        id="email"
-                        required
-                        data-validation-required-message="Please enter your email"
-                        name="_replyto"
-                      >
-                      <p class="help-block text-danger"></p>
-                    </div>
-                  </div>
-                  <div class="control-group">
-                    <div class="form-group">
-                      <textarea
-                        class="form-control"
-                        rows="7"
-                        placeholder="Your Message"
-                        id="message"
-                        required
-                        data-validation-required-message="Please leave a message"
-                        name="message"
-                      ></textarea>
-                      <p class="help-block text-danger"></p>
-                    </div>
-                  </div>
-                  <div class="text-center">
-                    <div id="success"></div>
-                    <button type="submit" class="btn btn-lg btn-light">
-                      <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
-                      Send Message
-                    </button>
-                  </div>
-                </form>
-            </div>
-          </section>
-
+        <h1>Shoot me an email</h1>
+        <br/>
+        <a href="mailto:klcohen@iu.edu?subject=Contact from portfolio">
+        <img style="width: 300px;" src="./assets/Email.png" class="ri" /></a>  
+    </section>
           <footer>
             <a  href="#header"> <img id = "up arrow" src="assets/upArrow.png" width="40" height="40"></a>
           </footer>
@@ -273,9 +210,9 @@
       minWidth: 200.00,
       scale: 1.00,
       scaleMobile: 1.00,
-      color2: 0xE3BA64,
-      color: 0x77601C,
-      backgroundColor: 0x05092E
+      color2: 0x6B8F71,
+      color: 0x6D9C8F,
+      backgroundColor: 0x1D1E18
     })
     </script>
 
