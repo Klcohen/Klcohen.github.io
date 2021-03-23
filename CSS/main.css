@@ -4,7 +4,7 @@
 body{
     background: var(--base);
     font-family: 'Poppins', sans-serif;
-    color:var(--highlightOne);
+    color:var(--highlightTwo);
     text-align: center;
 }
 
@@ -84,13 +84,15 @@ li{
     text-align: left;
     font-size: 18px;
   }
-  .card-button{
-      margin: 0;
-      position: absolute;
-      top: 75%;
-      left: 50%;
-      -ms-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
+  .card-button{  
+    margin: 0;
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding-top: 20%;
+    padding-bottom: 20%;
   }
   
   /*add this it*/
@@ -135,7 +137,7 @@ li{
     bottom: 0;
     background-color: rgba(0,0,0,0.7); /* Black background with opacity */
     z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
-    cursor: pointer; /* Add a pointer on hover */]
+    cursor: pointer; /* Add a pointer on hover */
   }
   
 HEADER
@@ -157,38 +159,6 @@ HEADER
 
 #header{
     height: 30em;
-}
-
-CONTACT
-.contact{
-    color:white;
-    border-color: var(--highlightTwo);
-    border-radius: 30px;
-    justify-items: center;
-    align-content: center;
-    background-color: var(--highlightTwo);
-}
-label{
-    text-align: left !important;
-}
-.container{
-    align-content: center !important;
-    justify-content: center !important;
-}
-form{
-    align-items: center !important;
-    justify-content: center !important;
-}
-.form-group{
-    width: 500px;
-    align-items: center !important;
-    justify-content: center !important;
-
-}
-
-.text-uppercase{
-    text-align: left;
-    
 }
 
 NAVBAR
@@ -256,17 +226,17 @@ button {
     width: 210px;
     opacity: 1;
     background-color: white;
-    border: 2px solid var(--highlightOne);
+    border: 2px solid var(--highlightTwo);
   }
   button span {
-    color: var(--highlightOne);
+    color: var(--highlightTwo);
     font-size: 12px;
     font-weight: 500;
     letter-spacing: 0.7px;
   }
   button:hover {
     animation: rotate 0.7s ease-in-out both;
-    background-color: var(--highlightOne);
+    background-color: var(--highlightTwo);
   }
   button:hover span {
     animation: storm 0.7s ease-in-out both;
@@ -398,5 +368,5 @@ SOCIAL ICONS
     --navy: #05092E;
     --base: #1D1E18;
     --highlightOne: #6B8F71;
-    --highlightTwo: #6A66A3;
+    --highlightTwo: #C6B75B;
 }
